@@ -1,0 +1,6 @@
+{
+  "name": "Lia AI",
+  "description": "Voice-first personal AI companion for Android with real-time Gemini Live voice, 10 personalities, phone actions, 3D orb UI, and live 3D Website Forge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

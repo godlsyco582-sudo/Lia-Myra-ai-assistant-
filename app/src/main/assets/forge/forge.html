@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Lia AI - Website Forge 3D</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { width: 100%; height: 100%; overflow: hidden; background: #06050E; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    #canvas-container { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; }
+    canvas { display: block; width: 100%; height: 100%; }
+    #overlay-hud {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .hud-chip {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(23, 20, 58, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 181, 71, 0.4);
+      border-radius: 20px;
+      color: #FFB547;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas-container">
+    <canvas id="forgeCanvas"></canvas>
+  </div>
+  <div id="overlay-hud">
+    <div id="statusChip" class="hud-chip">Forge Reactor Active</div>
+  </div>
+  <script src="forge.js"></script>
+</body>
+</html>
